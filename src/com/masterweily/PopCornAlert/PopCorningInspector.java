@@ -46,7 +46,7 @@ public class PopCorningInspector extends Thread {
         if (isPopcornReady()) controller.popCornIsReady();
     }
 
-    private boolean isPopcornReady() { return popsCount > 20; }
+    private boolean isPopcornReady() { return popsCount > 2; }
 
     public void close() { timer.cancel(); }
 
